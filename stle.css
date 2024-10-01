@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+.big-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    outline: 5px solid transparent;
+    outline-offset: -5px;
+}
+
+.box.basic h2 {
+    border-color: #007bff;
+    outline-color: #007bff;
+}
+
+.box.pro h2 {
+    border-color: #28a745;
+    outline-color: #28a745;
+}
+
+.box.premium h2 {
+    border-color: #ffc107;
+    outline-color: #ffc107;
+}
+
+.box .price {
+    font-size: 2.2em;
+    margin: 20px 0;
+}
+
+.box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+}
+
+.box ul li i {
+    margin-right: 10px;
+    font-size: 1.4em;
+    color: #007bff;
+}
+
+.box.basic ul li i {
+    color: #007bff !important;
+}
+
+.box.pro ul li i {
+    color: #28a745 !important;
+}
+
+.box.premium ul li i {
+    color: #ffc107 !important;
+}
+
+.box button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.box button:hover {
+    background-color: #0056b3;
+}
